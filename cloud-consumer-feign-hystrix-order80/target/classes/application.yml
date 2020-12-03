@@ -1,0 +1,16 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+feign:
+  hystrix:
+    enabled: true
